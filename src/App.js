@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import TodoList from './TodoList';
 
 function App() {
-  const [todos, SetTodos] = useState ([]); // Array to store to-do itens
+  const [todos, setTodos] = useState([]); // Array to store to-do items
 
   // Function to add a new to-do item
   const addTodo = (text) => {
-    setTodos([...todos, { text, completed: false}]);
+    setTodos([...todos, { text, completed: false }]);
   };
+
   return (
     <div className="App">
-      <h1>To-do List</h1>
+      <h1>To-Do List</h1>
       <TodoList todos={todos} addTodo={addTodo} />
-      </div>
+    </div>
   );
 }
 
