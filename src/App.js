@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import TodoList from './TodoList';
+import React, { useState } from "react";
+import TodoList from "./TodoList";
 
 function App() {
   const [todos, setTodos] = useState([]); // Array to store to-do items
